@@ -13,10 +13,17 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
-CFILES = ft_isalpha
-OFILES = $(SRCS:.c=.o)
+SRC= ft_toupper ft_tolower ft_strchr ft_strrchr ft_strncmp ft_memchr ft_memcmp ft_strnstr ft_atoi
+
+SRCS = $(addsuffix .c, ${SRC})
+
+OBJ = $(SRCS:.c=.o)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 NAME = libft.a
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
