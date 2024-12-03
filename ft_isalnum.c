@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-  if ((c > 96 && c < 123) || (c > 64 && c < 91) || (c > 47 && c < 58))
-    return (1);
-  return (0);
+	if ((c > 96 && c < 123) || (c > 64 && c < 91) || (c > 47 && c < 58))
+		return (1);
+	return (0);
 }
