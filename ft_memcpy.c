@@ -12,11 +12,11 @@
 
 #include "libft.h"
 
-void	*memcpy(void *dest, const void	*src, size_t n)
+void	*ft_memcpy(void *dest, const void	*src, size_t n)
 {
-	int					i;
-	unsigned char		*d;
+	size_t				i;
 	const unsigned char	*s;
+	unsigned char		*d;
 
 	i = 0;
 	d = (unsigned char *)dest;
