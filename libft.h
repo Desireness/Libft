@@ -6,7 +6,7 @@
 /*   By: rauizqui <rauizqui@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 10:49:52 by rauizqui          #+#    #+#             */
-/*   Updated: 2024/12/03 16:14:08 by rauizqui         ###   ########.fr       */
+/*   Updated: 2024/12/05 13:08:02 by rauizqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <stdbool.h>
+# include <stdlib.h>
 
 int		ft_toupper(int c);
 int		ft_tolower(int c);
@@ -35,5 +36,7 @@ size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t size);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
+void	*ft_calloc(size_t count, size_t size);
+char	*ft_strdup(const char *s);
 
 #endif
