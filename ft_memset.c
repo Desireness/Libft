@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rauizqui <rauizqui@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rauizqui <rauizqui@student42.madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/14 23:12:00 by rauizqui          #+#    #+#             */
-/*   Updated: 2025/01/14 23:12:01 by rauizqui         ###   ########.fr       */
+/*   Created: 2025/01/20 12:41:27 by rauizqui          #+#    #+#             */
+/*   Updated: 2025/01/20 12:41:30 by rauizqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,3 @@ void	*ft_memset(void *s, int c, size_t size)
 	}
 	return (s);
 }
-
-//int main() 
-//{
-//    char buffer[14];
-//    ft_memset(buffer, 'c', sizeof(buffer));
-//    for (int i = 0; i < 10; i++) {
-//        printf("%c ", buffer[i]);
-//    }
-//    return 0;
-//}
-//

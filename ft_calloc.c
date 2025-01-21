@@ -6,7 +6,7 @@
 /*   By: rauizqui <rauizqui@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 11:31:42 by rauizqui          #+#    #+#             */
-/*   Updated: 2024/12/05 11:31:42 by rauizqui         ###   ########.fr       */
+/*   Updated: 2025/01/20 14:42:05 by rauizqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*ptr;
 
 	total_size = count * size;
-	ptr = malloc(count * total_size);
+	ptr = malloc(total_size);
 	if (ptr == NULL)
 		return (NULL);
-	ft_memset(ptr, 0, count * total_size);
+	ft_bzero(ptr, total_size);
 	return (ptr);
 }

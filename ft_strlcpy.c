@@ -1,32 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rauizqui <rauizqui@student42.madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/20 14:46:37 by rauizqui          #+#    #+#             */
-/*   Updated: 2025/01/20 14:50:29 by rauizqui         ###   ########.fr       */
+/*   Created: 2025/01/20 12:59:44 by rauizqui          #+#    #+#             */
+/*   Updated: 2025/01/20 12:59:47 by rauizqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	char	*substr;
-	size_t	strlen;
+	size_t	i;
 
-	if (!s)
-		return (NULL);
-	strlen = ft_strlen(s);
-	if (start >= strlen)
-		return (ft_strdup(""));
-	if (strlen - start < len)
-		len = strlen - start;
-	substr = (char *)ft_calloc(len + 1, sizeof(char));
-	if (!substr)
-		return (NULL);
-	ft_memcpy(substr, s + start, len);
-	return (substr);
+	i = 0;
+	while (src[i] && i + 1 < dstsize)
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	if (dstsize > 0)
+	{
+		dst[i] = '\0';
+	}
+	while (src[i])
+	{
+		i++;
+	}
+	return (i);
 }
