@@ -6,7 +6,7 @@
 #    By: rauizqui <rauizqui@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/02 15:48:01 by adgarrid          #+#    #+#              #
-#    Updated: 2025/01/21 16:36:14 by rauizqui         ###   ########.fr        #
+#    Updated: 2025/01/22 19:51:46 by rauizqui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,13 @@ SRC= ft_toupper ft_tolower ft_strchr ft_strrchr ft_strncmp ft_memchr ft_memcmp f
 
 SRCS = $(addsuffix .c, ${SRC})
 
+B_SRC = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast ft_lstadd_back ft_lstdelone ft_lstclear \
+	ft_lstiter ft_lstmap \
+
+B_SRCS = $(addsuffix .c, ${B_SRC})
+
 OBJ = $(SRCS:.c=.o)
+B_OBJ = $(B_SRCS:.c=.o)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
@@ -32,8 +38,11 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
+bonus: $(OBJ) $(B_OBJ)
+	ar rcs $(NAME) $(OBJ) $(B_OBJ)
+
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(B_OBJ)
 
 fclean: clean
 	rm -f $(NAME)
