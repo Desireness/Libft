@@ -6,15 +6,11 @@
 /*   By: rauizqui <rauizqui@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 14:56:13 by rauizqui          #+#    #+#             */
-/*   Updated: 2025/01/21 16:05:58 by rauizqui         ###   ########.fr       */
+/*   Updated: 2025/01/22 19:16:59 by rauizqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strchr(const char *s, int c);
-size_t	ft_strlen(const char *s);
 
 static int	count_words(char const *s, char c)
 {
@@ -57,18 +53,4 @@ char	**ft_split(char const *s, char c)
 	}
 	split[n] = NULL;
 	return (split);
-}
-
-int main()
-{
-	char const str[] = "esto es un test no lo ves";
-	char c = ' ';
-	char **split = ft_split(str, c);
-	int i = 0;
-
-	while (split[i])
-	{
-		printf("%s\n", split[i]);
-		i++;
-	}
 }

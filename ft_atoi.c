@@ -6,7 +6,7 @@
 /*   By: rauizqui <rauizqui@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 12:55:23 by rauizqui          #+#    #+#             */
-/*   Updated: 2024/12/03 17:32:36 by rauizqui         ###   ########.fr       */
+/*   Updated: 2025/01/22 19:16:22 by rauizqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,3 @@ int	ft_atoi(const char *str)
 	}
 	return (0);
 }
-
-//int main()
-//{
-//	char str[] = "-1234";
-//	printf("%d", ft_atoi(str));
-//}

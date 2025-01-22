@@ -6,7 +6,7 @@
 /*   By: rauizqui <rauizqui@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 12:55:17 by rauizqui          #+#    #+#             */
-/*   Updated: 2024/12/03 12:55:17 by rauizqui         ###   ########.fr       */
+/*   Updated: 2025/01/22 19:15:06 by rauizqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-/*int main()
-{
-	char data[] = {'q', 'r', 's', 't', 'p', 'a', 'x'};
-
-	char *position = ft_memchr(data, 't', 7);
-	printf("pos[0] = %c\n", position[1]);
-}*/

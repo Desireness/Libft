@@ -6,7 +6,7 @@
 /*   By: rauizqui <rauizqui@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 12:54:59 by rauizqui          #+#    #+#             */
-/*   Updated: 2024/12/03 13:10:09 by rauizqui         ###   ########.fr       */
+/*   Updated: 2025/01/22 19:13:51 by rauizqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	return ((char *) last);
 }
-
-/*int main()
-{
-	const char str[] = "hola";
-
-	int c  = 'a';
-	int d	= 'h';
-	printf("%s", ft_strrchr(str, c));
-}*/

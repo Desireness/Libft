@@ -6,7 +6,7 @@
 /*   By: rauizqui <rauizqui@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 12:55:07 by rauizqui          #+#    #+#             */
-/*   Updated: 2024/12/03 12:55:07 by rauizqui         ###   ########.fr       */
+/*   Updated: 2025/01/22 19:12:43 by rauizqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 	return (0);
 }
-
-/*int main()
-{
-	printf("%s", ft_strncmp("abcdefgh", "abcdwxyz", 4));
-	unsigned char to return (no matter what) unsigned
-}*/

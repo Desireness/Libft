@@ -6,7 +6,7 @@
 /*   By: rauizqui <rauizqui@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 12:55:15 by rauizqui          #+#    #+#             */
-/*   Updated: 2024/12/03 12:55:15 by rauizqui         ###   ########.fr       */
+/*   Updated: 2025/01/22 17:12:42 by rauizqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/*int main(void)
-{
-    char str1[] = "abcdef";
-    char str2[] = "abcdef";
-    char str3[] = "abcdeg";
-    char str4[] = "abcd";
-
-    printf("Test 1: %d\n", ft_memcmp(str1, str2, 6));
-    printf("Test 2: %d\n", ft_memcmp(str1, str3, 6));
-    printf("Test 3: %d\n", ft_memcmp(str1, str4, 4));
-    printf("Test 4: %d\n", ft_memcmp(str1, str2, 0));
-    return 0;
-}*/
